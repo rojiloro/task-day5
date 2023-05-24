@@ -111,3 +111,45 @@ nav ul li .active {
 .icon a {
   color: black;
 }
+
+#barsmenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 23px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9a9a9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: block;
+  }
+
+  .c-left {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .c-right {
+    margin-left: 0;
+  }
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+}

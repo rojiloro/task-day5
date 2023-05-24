@@ -14,15 +14,28 @@
     <nav>
       <div class="left">
         <ul>
-          <li><img src="assets/img/logo.png" alt="logo" class="logo" /></li>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="myproject.html">My Project</a></li>
+          <li class="item-collapse"><img src="assets/img/logo.png" alt="logo" class="logo" /></li>
+          <li class="item-collapse"><a href="index.html" class="active">Home</a></li>
+          <li class="item-collapse"><a href="myproject.html">My Project</a></li>
         </ul>
       </div>
-      <div class="right">
+      <div class="right item-collapse">
         <a href="contact.html">Contact Me</a>
       </div>
+
+      <div class="nav-right item-collapse" id="barsmenu" onclick="openBurger()">
+        <button style="background-color: transparent; border: none; cursor: pointer" >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html" class="hamburger-active">Home</a>
+      <a href="myproject.html">My Project</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
     <div class="container">
       <div class="c-left">
         <h3>Hi Welcome to my profile</h3>
@@ -44,5 +57,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
