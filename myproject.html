@@ -1,4 +1,5 @@
 <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <head>
     <title>My Project</title>
     <link rel="stylesheet" href="css/style.css" />
@@ -16,15 +17,27 @@
     <nav>
       <div class="left">
         <ul>
-          <li><img src="assets/img/logo.png" alt="logo" class="logo" /></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#" class="active">My Project</a></li>
+          <li class="item-collapse"><img src="assets/img/logo.png" alt="logo" class="logo" /></li>
+          <li class="item-collapse"><a href="index.html">Home</a></li>
+          <li class="item-collapse"><a href="myproject.html" class="active">My Project</a></li>
         </ul>
       </div>
-      <div class="right">
+      <div class="right item-collapse">
         <a href="contact.html">Contact Me</a>
       </div>
+
+      <div class="nav-right item-collapse" id="barsmenu" onclick="openBurger()">
+        <button style="background-color: transparent; border: none; cursor: pointer">
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html" class="hamburger-active">Home</a>
+      <a href="myproject.html">My Project</a>
+      <a href="contact.html"><button class="tombol">Contact</button></a>
+    </div>
     <div class="project">
       <div class="project-form">
         <div class="form-container">
@@ -117,5 +130,6 @@
       </div>            
     </div>
     <script src="js/project.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
