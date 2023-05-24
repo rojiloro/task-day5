@@ -183,29 +183,49 @@ textarea {
 }
 
 /* project details */
-.detail {
-  display: flex;
-  justify-content: center;
+.detail .container-detail {
+  width: 990px;
+  margin: auto;
 }
-
-.container {
-  width: 1000px;
-  margin: 40px 0;
+.container-detail h1 {
   text-align: center;
 }
-.container h1 {
-  text-align: center;
+.hero img {
+  width: 450px;
+  background-size: cover;
 }
 
 .hero {
-  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 10px;
+}
+
+.hero .judul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hero .text {
   display: flex;
+  justify-content: start;
 }
 
-.hero img {
-  width: 60%;
+.text p {
+  margin-left: 10px;
+  margin-top: -4px;
 }
 
+.tech .jejer {
+  display: flex;
+  justify-content: start;
+}
+
+.jejer p {
+  margin-left: 20px;
+  margin-top: -6px;
+}
 @media only screen and (max-width: 900px) {
   .project-form .form-container {
     width: 300px;
